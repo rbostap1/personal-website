@@ -259,6 +259,38 @@ header h1 {
   transition: filter 0.18s;
 }
 
+.projects-section .btn,
+.projects-section .btn-outline-primary {
+  transition:
+    background 0.18s,
+    color 0.18s,
+    box-shadow 0.18s,
+    border 0.18s,
+    transform 0.18s;
+}
+
+.projects-section .btn:hover,
+.projects-section .btn-outline-primary:hover,
+.projects-section .btn:focus,
+.projects-section .btn-outline-primary:focus {
+  background: linear-gradient(90deg, #2563eb 0%, #38bdf8 100%);
+  color: #fff;
+  border-color: #2563eb;
+  box-shadow: 0 0 24px #38bdf8, 0 0 0 6px #2563eb33;
+  transform: translateY(-2px) scale(1.07);
+  text-decoration: none;
+}
+
+.projects-section .card:hover .btn,
+.projects-section .card:hover .btn-outline-primary {
+  background: #fff !important;
+  color: #2563eb !important;
+  border-color: #fff !important;
+  box-shadow: 0 0 24px #fff8, 0 0 0 6px #2563eb22;
+  transform: translateY(-2px) scale(1.07);
+  text-decoration: none;
+}
+
 footer {
   margin-top: 4rem;
   padding: 2rem 0 1.2rem 0;
