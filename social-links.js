@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       selector: 'a[aria-label="X"]',
-      url: "https://twitter.com/OfficialBHS2023"
+      url: "https://x.com/RyanBostaph"
     },
     {
       selector: 'a[aria-label="Instagram"]',
-      url: "https://www.instagram.com/"
+      url: "https://www.instagram.com/ryan_bostaph"
     }
   ];
 

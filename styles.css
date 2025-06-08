@@ -108,7 +108,11 @@ header h1 {
   margin-top: 1.5rem;
   display: flex;
   justify-content: center;
-  gap: 1.7rem;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 320px;
+  align-items: center;
 }
 
 .hero-social .footer-icon-link {
@@ -116,14 +120,24 @@ header h1 {
   background: #2563eb;
   border-radius: 50%;
   opacity: 0.97;
-  box-shadow: 0 2px 16px #2563eb44, 0 0 0 4px #38bdf822;
-  padding: 0.35rem;
-  font-size: 1.7rem;
-  transition: color 0.18s, background 0.18s, opacity 0.18s, transform 0.18s, box-shadow 0.18s;
-  display: inline-flex;
+  box-shadow: 0 2px 16px #2563eb44, 0 0 0 2px #38bdf822;
+  padding: 0.25rem;
+  font-size: 1.5rem;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
   align-items: center;
   justify-content: center;
+  transition: color 0.18s, background 0.18s, opacity 0.18s, transform 0.18s, box-shadow 0.18s;
   animation: float-social 3.5s ease-in-out infinite;
+}
+
+.hero-social .footer-icon-link svg {
+  width: 28px;
+  height: 28px;
+  display: block;
 }
 
 .hero-social .footer-icon-link:hover,
@@ -131,14 +145,9 @@ header h1 {
   color: #2563eb;
   background: #fff;
   opacity: 1;
-  box-shadow: 0 0 24px #38bdf8, 0 0 0 6px #2563eb33;
-  transform: translateY(-4px) scale(1.18) rotate(-6deg);
+  box-shadow: 0 0 24px #38bdf8, 0 0 0 4px #2563eb33;
+  transform: translateY(-4px) scale(1.13);
   text-decoration: none;
-}
-
-@keyframes float-social {
-  0%, 100% { transform: translateY(0);}
-  50% { transform: translateY(-7px) scale(1.09);}
 }
 
 .about-section,
