@@ -5,66 +5,190 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Ryan Bostaph</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  <header></header>
-  <nav class="navbar">
-    <ul>
-      <li><a href="#profile">Profile</a></li>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#skills">Skills</a></li>
-    </ul>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top" style="backdrop-filter: blur(6px);">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="#">Ryan Bostaph</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#profile">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
-  <section id="profile" class="profile-section">
+  <section id="profile" class="profile-section hero-section">
     <img src="Images/IMG_8716-scaled.jpg" alt="Profile" class="profile-img">
     <h1 class="profile-text">Ryan Bostaph</h1>
+    <div class="hero-social mt-3">
+      <a href="https://www.linkedin.com/in/ryanbostaph" target="_blank" rel="noopener" aria-label="LinkedIn" class="footer-icon-link">
+        <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24" style="vertical-align:middle;"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.29c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm15.5 10.29h-3v-4.5c0-1.1-.9-2-2-2s-2 .9-2 2v4.5h-3v-9h3v1.22c.41-.72 1.39-1.22 2.5-1.22 1.93 0 3.5 1.57 3.5 3.5v5.5z"/></svg>
+      </a>
+      <a href="https://twitter.com/OfficialBHS2023" target="_blank" rel="noopener" aria-label="X" class="footer-icon-link">
+        <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24" style="vertical-align:middle;"><path d="M17.53 6.477h3.451l-7.51 8.633 7.51 8.413h-6.02l-4.73-5.32-5.41 5.32h-3.46l7.98-8.82-7.98-8.22h6.03l4.14 4.65zm-1.08 14.366h1.91l-6.13-6.89-1.91 2.13zm-10.02-13.82l6.13 6.32 1.91-2.13-6.13-6.32z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="footer-icon-link">
+        <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24" style="vertical-align:middle;"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.34 3.608 1.314.974.974 1.252 2.242 1.314 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.34 2.633-1.314 3.608-.974.974-2.242 1.252-3.608 1.314-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.34-3.608-1.314-.974-.974-1.252-2.242-1.314-3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.85c.062-1.366.34-2.633 1.314-3.608C4.521 2.573 5.789 2.295 7.155 2.233 8.421 2.175 8.801 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.771.131 4.659.388 3.678 1.369c-.981.981-1.238 2.093-1.297 3.374C2.013 8.332 2 8.741 2 12c0 3.259.013 3.668.072 4.948.059 1.281.316 2.393 1.297 3.374.981.981 2.093 1.238 3.374 1.297C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.281-.059 2.393-.316 3.374-1.297.981-.981 1.238-2.093 1.297-3.374.059-1.28.072-1.689.072-4.948 0-3.259-.013-3.668-.072-4.948-.059-1.281-.316-2.393-1.297-3.374-.981-.981-2.093-1.238-3.374-1.297C15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg>
+      </a>
+    </div>
   </section>
-  <section id="about" class="about-section">
-    <h2>About Me</h2>
-    <p>
-      Currently enrolled at Kent State University, Ryan Bostaph is pursuing a Bachelor of Science in Business Administration with a concentration in Computer Information Systems.<br><br>
-      As an avid technology enthusiast, Ryan remains current with the latest advancements in the field. He actively assists individuals seeking technological support and possesses proficiency in various operating systems, including iOS, WatchOS, MacOS, and iPadOS.<br><br>
-      Beyond his academic pursuits, Ryan has held leadership roles in his high school community. He served as a member of the National Honor Society and as a Display Content Editor, responsible for managing content displayed on a television screen in the school’s lobby, which disseminated announcements and pertinent information. Additionally, he served as the Social Media Coordinator for his high school class, overseeing the management of the Barnesville High School Class of 2023 (@OfficialBHS2023) Twitter (X) account.<br><br>
-      Ryan’s professional experience extends to his involvement with the Non-Profit Youth and Educators Succeeding organization. He commenced his work with the organization in February 2021, initially as a Student Action Agent. During the summer of 2021, he secured an internship that spanned from June to August, followed by another internship for the 2021-22 academic year, which concluded in December 2021.<br><br>
-      Ryan holds certifications through GenYES Ohio, a program administered by INFOHIO. He has also obtained the Google IT Support Professional Certificate and the OhioMeansJobs Readiness Seal, which he achieved through a Pre-Apprenticeship program with his local ITC.
-    </p>
+  <section id="about" class="about-section py-5">
+    <div class="about-card mx-auto shadow-lg p-4 px-md-5 mb-4">
+      <div class="about-icon mb-3">
+        <svg width="48" height="48" fill="none" viewBox="0 0 48 48">
+          <circle cx="24" cy="24" r="24" fill="#2563eb" opacity="0.12"/>
+          <path d="M24 14a6 6 0 100 12 6 6 0 000-12zm0 16c-5.33 0-16 2.67-16 8v2h32v-2c0-5.33-10.67-8-16-8z" fill="#2563eb"/>
+        </svg>
+      </div>
+      <h2 class="about-title mb-3 text-primary fw-bold">About Me</h2>
+      <p class="about-text mb-0">
+        Currently enrolled at Kent State University, Ryan Bostaph is pursuing a Bachelor of Science in Business Administration with a concentration in Computer Information Systems.<br><br>
+        As an avid technology enthusiast, Ryan remains current with the latest advancements in the field. He actively assists individuals seeking technological support and possesses proficiency in various operating systems, including iOS, WatchOS, MacOS, and iPadOS.<br><br>
+        Beyond his academic pursuits, Ryan has held leadership roles in his high school community. He served as a member of the National Honor Society and as a Display Content Editor, responsible for managing content displayed on a television screen in the school’s lobby, which disseminated announcements and pertinent information. Additionally, he served as the Social Media Coordinator for his high school class, overseeing the management of the Barnesville High School Class of 2023 (@OfficialBHS2023) Twitter (X) account.<br><br>
+        Ryan’s professional experience extends to his involvement with the Non-Profit Youth and Educators Succeeding organization. He commenced his work with the organization in February 2021, initially as a Student Action Agent. During the summer of 2021, he secured an internship that spanned from June to August, followed by another internship for the 2021-22 academic year, which concluded in December 2021.<br><br>
+        Ryan holds certifications through GenYES Ohio, a program administered by INFOHIO. He has also obtained the Google IT Support Professional Certificate and the OhioMeansJobs Readiness Seal, which he achieved through a Pre-Apprenticeship program with his local ITC.
+      </p>
+    </div>
   </section>
-  <section id="skills" class="skills-section">
-    <h2>Skills</h2>
-    <ul class="skills-list">
-      <li>
-        <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5" class="skill-icon">
-        HTML &amp; CSS
-      </li>
-      <li>
-        <img src="https://cdn.simpleicons.org/github/181717" alt="GitHub" class="skill-icon">
-        GitHub
-      </li>
-      <li>
-        <span class="skill-icon" style="padding:0;">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24" height="24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m9-5.13a4 4 0 11-8 0 4 4 0 018 0zm6 8v2a2 2 0 01-2 2h-3.5M3 20v2a2 2 0 002 2h3.5"/>
-          </svg>
-        </span>
-        Teamwork
-      </li>
-      <li>
-        <img src="https://cdn.simpleicons.org/apple/000000" alt="Apple Software" class="skill-icon">
-        Apple Software
-      </li>
-      <li>
-        <img src="https://cdn.simpleicons.org/thinkpad/000000" alt="Problem Solving Skills" class="skill-icon">
-        Problem Solving Skills
-      </li>
-      <li>
-        <img src="https://cdn.simpleicons.org/criticalrole/000000" alt="Critical Thinking Skills" class="skill-icon">
-        Critical Thinking Skills
-      </li>
-    </ul>
+  <section id="skills" class="skills-section py-5">
+    <div class="container">
+      <h2 class="mb-4 text-primary fw-bold text-center">Skills</h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 justify-content-center mx-0">
+        <div class="col">
+          <div class="card h-100 border-0 shadow-sm text-center p-3">
+            <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5" class="mx-auto mb-2" style="width:2.5rem;height:2.5rem;">
+            <div class="card-body p-0">
+              <h6 class="card-title fw-semibold mb-0">HTML &amp; CSS</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border-0 shadow-sm text-center p-3">
+            <img src="https://cdn.simpleicons.org/github/181717" alt="GitHub" class="mx-auto mb-2" style="width:2.5rem;height:2.5rem;">
+            <div class="card-body p-0">
+              <h6 class="card-title fw-semibold mb-0">GitHub</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border-0 shadow-sm text-center p-3">
+            <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" class="mx-auto mb-2" style="width:2.5rem;height:2.5rem;">
+            <div class="card-body p-0">
+              <h6 class="card-title fw-semibold mb-0">JavaScript</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border-0 shadow-sm text-center p-3">
+            <span class="mx-auto mb-2 d-block" style="width:2.5rem;height:2.5rem;">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="40" height="40">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m9-5.13a4 4 0 11-8 0 4 4 0 018 0zm6 8v2a2 2 0 01-2 2h-3.5M3 20v2a2 2 0 002 2h3.5"/>
+              </svg>
+            </span>
+            <div class="card-body p-0">
+              <h6 class="card-title fw-semibold mb-0">Teamwork</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border-0 shadow-sm text-center p-3">
+            <img src="https://cdn.simpleicons.org/apple/000000" alt="Apple Software" class="mx-auto mb-2" style="width:2.5rem;height:2.5rem;">
+            <div class="card-body p-0">
+              <h6 class="card-title fw-semibold mb-0">Apple Software</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border-0 shadow-sm text-center p-3">
+            <img src="https://cdn.simpleicons.org/thinkpad/000000" alt="Problem Solving Skills" class="mx-auto mb-2" style="width:2.5rem;height:2.5rem;">
+            <div class="card-body p-0">
+              <h6 class="card-title fw-semibold mb-0">Problem Solving Skills</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border-0 shadow-sm text-center p-3">
+            <img src="https://cdn.simpleicons.org/criticalrole/000000" alt="Critical Thinking Skills" class="mx-auto mb-2" style="width:2.5rem;height:2.5rem;">
+            <div class="card-body p-0">
+              <h6 class="card-title fw-semibold mb-0">Critical Thinking Skills</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects" class="projects-section py-5">
+    <h2 class="mb-4 text-primary fw-bold text-center">Projects</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center mx-0">
+      <div class="col">
+        <div class="card h-100 border-0 shadow-sm p-3">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Personal Website (this site)</h5>
+            <p class="card-text">A responsive, accessible personal website built with HTML, CSS, Bootstrap, and JavaScript to showcase my skills and projects.</p>
+            <a href="#" class="btn btn-outline-primary btn-sm disabled" tabindex="-1" aria-disabled="true">View Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border-0 shadow-sm p-3">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Intel Sustainability Through the Ages</h5>
+            <p class="card-text">A project focused on Intel's sustainability initiatives and their evolution over time, highlighting environmental and social impacts.</p>
+            <a href="#" class="btn btn-outline-primary btn-sm disabled" tabindex="-1" aria-disabled="true">View Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border-0 shadow-sm p-3">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Intel Localization and Accessibility</h5>
+            <p class="card-text">A project exploring how Intel addresses localization and accessibility in its products and services to reach a global audience.</p>
+            <a href="#" class="btn btn-outline-primary btn-sm disabled" tabindex="-1" aria-disabled="true">View Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border-0 shadow-sm p-3">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Water Rush</h5>
+            <p class="card-text">A collaborative project designed to raise awareness about water conservation through interactive and educational experiences.</p>
+            <a href="#" class="btn btn-outline-primary btn-sm disabled" tabindex="-1" aria-disabled="true">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <footer>
     &copy; 2025 Ryan Bostaph. All rights reserved.
+    <div class="footer-social mt-2">
+      <a href="https://www.linkedin.com/in/ryanbostaph" target="_blank" rel="noopener" aria-label="LinkedIn" class="footer-icon-link">
+        <svg width="28" height="28" fill="currentColor" viewBox="0 0 24 24" style="vertical-align:middle;"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.29c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm15.5 10.29h-3v-4.5c0-1.1-.9-2-2-2s-2 .9-2 2v4.5h-3v-9h3v1.22c.41-.72 1.39-1.22 2.5-1.22 1.93 0 3.5 1.57 3.5 3.5v5.5z"/></svg>
+      </a>
+      <a href="https://twitter.com/OfficialBHS2023" target="_blank" rel="noopener" aria-label="X" class="footer-icon-link">
+        <svg width="28" height="28" fill="currentColor" viewBox="0 0 24 24" style="vertical-align:middle;"><path d="M17.53 6.477h3.451l-7.51 8.633 7.51 8.413h-6.02l-4.73-5.32-5.41 5.32h-3.46l7.98-8.82-7.98-8.22h6.03l4.14 4.65zm-1.08 14.366h1.91l-6.13-6.89-1.91 2.13zm-10.02-13.82l6.13 6.32 1.91-2.13-6.13-6.32z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="footer-icon-link">
+        <svg width="28" height="28" fill="currentColor" viewBox="0 0 24 24" style="vertical-align:middle;"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.34 3.608 1.314.974.974 1.252 2.242 1.314 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.34 2.633-1.314 3.608-.974.974-2.242 1.252-3.608 1.314-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.34-3.608-1.314-.974-.974-1.252-2.242-1.314-3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.85c.062-1.366.34-2.633 1.314-3.608C4.521 2.573 5.789 2.295 7.155 2.233 8.421 2.175 8.801 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.771.131 4.659.388 3.678 1.369c-.981.981-1.238 2.093-1.297 3.374C2.013 8.332 2 8.741 2 12c0 3.259.013 3.668.072 4.948.059 1.281.316 2.393 1.297 3.374.981.981 2.093 1.238 3.374 1.297C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.281-.059 2.393-.316 3.374-1.297.981-.981 1.238-2.093 1.297-3.374.059-1.28.072-1.689.072-4.948 0-3.259-.013-3.668-.072-4.948-.059-1.281-.316-2.393-1.297-3.374-.981-.981-2.093-1.238-3.374-1.297C15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg>
+      </a>
+    </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="social-links.js"></script>
   <script>
     // Smooth scroll with ease animation for navbar links
     document.querySelectorAll('.navbar a[href^="#"]').forEach(link => {
