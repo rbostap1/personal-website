@@ -22,4 +22,28 @@ document.addEventListener("DOMContentLoaded", function () {
       el.rel = "noopener";
     }
   });
+
+  // Project links mapping (order matches the cards)
+  const projectLinks = [
+    "https://github.com/rbostap1/personal-website",
+    "https://github.com/rbostap1/02-prj-intel-sustainability",
+    "https://github.com/rbostap1/03-intel-proj-localization",
+    "https://github.com/rbostap1/water-rush"
+  ];
+
+  // Select all project "View Project" buttons in order
+  const projectButtons = document.querySelectorAll(
+    '.projects-section .card .btn, .projects-section .card .btn-outline-primary'
+  );
+
+  projectButtons.forEach((btn, idx) => {
+    if (projectLinks[idx]) {
+      btn.href = projectLinks[idx];
+      btn.classList.remove('disabled');
+      btn.removeAttribute('tabindex');
+      btn.removeAttribute('aria-disabled');
+      btn.target = "_blank";
+      btn.rel = "noopener";
+    }
+  });
 });
